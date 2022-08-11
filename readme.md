@@ -2,7 +2,7 @@
 
 Клиентская часть, построение архитектуры приложения Angular
 
-Back-end, REST API на Express, здесь [https://github.com/dmitriy-tka4/users-auth-base-server](https://github.com/dmitriy-tka4/users-auth-base-server)
+Back-end, REST API на Express, здесь [https://github.com/dmitriy-tka4/auth-base-server](https://github.com/dmitriy-tka4/auth-base-server)
 
 ## Техническое задание
 
