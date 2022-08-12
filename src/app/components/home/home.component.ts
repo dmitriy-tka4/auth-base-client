@@ -34,9 +34,9 @@ export class HomeComponent implements OnInit {
   }
 
   logout() {
-    this.authService.logout()
+    this.authService.logout() // удалили куки с access token
       .subscribe(() => {
-        this.authService.removeCurrentUser();
+        this.authService.removeCurrentUser(); // и удалили текущего пользователя из localStorage
       });
   }
 }

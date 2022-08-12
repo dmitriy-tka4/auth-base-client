@@ -1,5 +1,5 @@
 {
-  "name": "users-auth-base-client",
+  "name": "auth-base-client",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -9,6 +9,7 @@
     "test": "ng test"
   },
   "private": true,
+  "author": "Dmitriy Tkach <dmitriy.tka4@gmail.com>",
   "dependencies": {
     "@angular/animations": "^14.0.0",
     "@angular/common": "^14.0.0",

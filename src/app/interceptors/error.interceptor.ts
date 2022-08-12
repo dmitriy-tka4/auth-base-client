@@ -25,17 +25,12 @@ export class ErrorInterceptor implements HttpInterceptor {
       .pipe(
         // retry(1),
         catchError((error: HttpErrorResponse) => {
-          console.log('error in interceptor', error);
           window.alert(`${error.status} - ${error.error}`);
 
           // обработать ошибку 401 Unauthorized, когда куки протухли, то нужно разлогинить
           if (error.status === 401) {
-            console.log('logout in interceptor');
-
             this.authService.logout()
               .subscribe((response) => {
-                console.log('logout response', response);
-
                 this.authService.removeCurrentUser();
                 this.router.navigate(['/login']);
               });
